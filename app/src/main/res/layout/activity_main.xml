@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="FRUIT PEDIA"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_below="@id/judul">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/anggur_hitam"
+            android:layout_width="match_parent"
+            android:layout_height="361dp"
+            android:layout_marginBottom="50px"
+            app:srcCompat="@drawable/anggur_hitam"
+            android:onClick="info_anghit"/>
+
+        <TextView
+            android:id="@+id/image1T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anggur Hitam (Rp 30.000/kg)"
+            android:layout_below="@+id/anggur_hitam"
+            android:layout_marginLeft="50px"/>
+
+        <Button
+            android:id="@+id/button_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image1T"
+            android:layout_alignLeft="@id/image1T"
+            android:layout_marginLeft="313dp"
+            android:layout_marginTop="-32dp"
+            android:layout_marginBottom="20px"
+            android:text="Beli"
+            android:onClick="beli_AngHit"/>
+
+        <ImageView
+            android:id="@+id/anggur_merah"
+            android:layout_width="match_parent"
+            android:layout_height="237dp"
+            android:layout_below="@id/image1T"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/anggur_merah"
+            tools:ignore="InvalidId"
+            android:onClick="info_angmer"/>
+
+        <TextView
+            android:id="@+id/image2T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anggur Merah (Rp 40.000/kg)"
+            android:layout_below="@+id/anggur_merah"
+            android:layout_marginLeft="50px"/>
+
+        <Button
+            android:id="@+id/button_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image2T"
+            android:layout_alignLeft="@id/image2T"
+            android:layout_marginLeft="301dp"
+            android:layout_marginTop="-26dp"
+            android:layout_marginBottom="20px"
+            android:text="Beli"
+            android:onClick="beli_AngMer"/>
+
+        <ImageView
+            android:id="@+id/apel_fuji"
+            android:layout_width="match_parent"
+            android:layout_height="237dp"
+            android:layout_below="@id/image1T"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/apel_fuji"
+            tools:ignore="InvalidId"
+            android:onClick="info_apel"/>
+
+        <TextView
+            android:id="@+id/image3T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apel Fuji (Rp 35.000/kg)"
+            android:layout_below="@+id/apel_fuji"
+            android:layout_marginLeft="50px"/>
+
+        <Button
+            android:id="@+id/button_image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/image3T"
+            android:layout_marginLeft="301dp"
+            android:layout_marginTop="-26dp"
+            android:layout_marginBottom="20px"
+            android:text="Beli"
+            android:onClick="beli_Apel"/>
+
+        <ImageView
+            android:id="@+id/mangga"
+            android:layout_width="match_parent"
+            android:layout_height="237dp"
+            android:layout_below="@id/image1T"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/mangga"
+            tools:ignore="InvalidId"
+            android:onClick="info_mangga"/>
+
+        <TextView
+            android:id="@+id/image4T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mangga (Rp 20.000/kg)"
+            android:layout_below="@+id/mangga"
+            android:layout_marginLeft="50px"/>
+
+        <Button
+            android:id="@+id/button_image4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/image4T"
+            android:layout_marginLeft="301dp"
+            android:layout_marginTop="-26dp"
+            android:layout_marginBottom="20px"
+            android:text="Beli"
+            android:onClick="beli_Mangga"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>
